@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larabel Garcia Portfolio</title>
+  <style>
+    /* Reset & base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background: #0b0b0b; /* deep black */
+      color: #d4c18c; /* gold accent */
+      line-height: 1.6;
+    }
+
+    header {
+      width: 100%;
+      background: #1a1a1a;
+      color: #d4c18c;
+      padding: 25px;
+      text-align: center;
+      font-size: 36px;
+      letter-spacing: 3px;
+      border-bottom: 3px solid #8b7d5d;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background: #111010;
+      padding: 12px 0;
+      border-bottom: 2px solid #8b7d5d;
+    }
+
+    nav a {
+      color: #d4c18c;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #d4c18c;
+    }
+
+    .section {
+      padding: 70px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-image:url('ay.jpg');
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(175, 162, 162, 0.8);
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #d4c18c;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      color: #d4c18c;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .hero p {
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #d4c18c;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    h2 {
+      border-left: 6px solid #8b7d5d;
+      padding-left: 12px;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #d4c18c;
+    }
+
+    .skills-list, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      color: #d4c18c;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      border: 1px solid #8b7d5d;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.9);
+    }
+
+    a {
+      color: #d4c18c;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #d4c18c;
+    }
+
+    footer {
+      text-align: center;
+      background: #121212;
+      color: #d4c18c;
+      padding: 25px;
+      margin-top: 30px;
+      border-top: 3px solid #8b7d5d;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>MY PERSONAL PORTFOLIO</header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="section hero">
+    <img src="char.jpg" alt="Portrait of Larabel Garcia">
+    <h1>Hi, I'm LARABEL GARCIA</h1>
+    <p>Web Developer | Singer | Dancer | Student</p>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p style="margin-top: 10px; line-height:1.7;">
+      Hi! I'm <b>LARABEL GARCIA</b>, a passionate and creative student who loves exploring different skills and expressing myself through technology and the arts.
+    </p>
+    <br>
+    <div class="card">
+      <p><b>Birthday:</b> October 26, 2004</p>
+      <p><b>Age:</b> 21</p>
+      <p><b>Status:</b> Single</p>
+      <p><b>Favorite Color:</b> Black</p>
+      <p><b>Hobbies:</b> Playing online games & Watching movies</p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="card">Coding</div>
+      <div class="card">Sepak</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>Short description of your project.</p>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>Short description of your project.</p>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>Short description of your project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card" style="line-height:1.8;">
+      <p><b>Name:</b> LARABEL GARCIA</p>
+      <p><b>Email:</b> larabelgarcia428@gmail.com</p>
+      <p><b>Contact Number:</b> 09638209167</p>
+      <p><b>Facebook:</b> <a href="https://www.facebook.com/larabelle.bacornaygarcia/share/1HYUmmGRkN/" target="_blank">Visit my Facebook</a></p>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+
+</body>
+</html>
